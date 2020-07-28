@@ -1,3 +1,12 @@
 body { 
-    background-color: #bec8ff;
+    background-color: #030a35;
+    margin: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.testText {
+    color: #d5edff;
+    font-size: 50px;
+    position: absolute;
+    top: 50px; left: 50px;
 }

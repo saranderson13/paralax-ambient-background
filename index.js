@@ -5,14 +5,13 @@ window.addEventListener('resize', () => {
 
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight);
-    bokeh = new Bokeh(85, 6, 100, 10, 1)
+    field = new BokehField()
     frameRate(10)
 }
 
 function draw() {
     
     background(3, 10, 53)
-    bokeh.fade()
-    bokeh.display()
+    field.advanceExtraLarge()
 
 }

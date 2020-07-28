@@ -10,17 +10,7 @@ class Bokeh {
         this.alphaPeak = Math.random() * (this.alphaMod - minAlpha) + minAlpha
         this.alpha = 0
         this.fadingOut = false
-    }
-
-    randomDimensionSet() {
-        const bokehDimensions = [
-            [5, 1, 100, 90],
-            [85, 6, 100, 10],
-            [200, 86, 40, 10],
-            [500, 200, 15, 0]
-        ]
-
-        return bokehDimensions[Math.floor(Math.random() * bokehDimensions.length)]
+        this.dead = false
     }
 
     fade() {
@@ -31,6 +21,8 @@ class Bokeh {
         } else if (this.fadingOut && this.alpha > 0) {
             this.alpha += -this.fadeSpeed
             console.log(this.alpha)
+        } else {
+            this.dead = true
         }
     }
 

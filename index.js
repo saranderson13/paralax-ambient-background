@@ -12,6 +12,10 @@ function setup() {
 function draw() {
     
     background(3, 10, 53)
-    field.advanceExtraLarge()
 
+    field.advanceBokehField(field.extraLargeBokeh, "extraLarge")
+    field.advanceBokehField(field.largeBokeh, "large")
+    field.advanceBokehField(field.mediumBokeh, "medium")
+    field.advanceBokehField(field.smallBokeh, "small")
+    
 }
